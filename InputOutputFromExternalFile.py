@@ -1,4 +1,4 @@
-# Below is Pythone code for input/output
+# Python code for input/output
   
 import sys
 # For getting input from input.txt file
@@ -10,8 +10,8 @@ sys.stdout = open('Output.txt', 'w')
 #####################################Implementation########################################
 import sys
 
-sys.stdin = open('C:/Users/Hubi/Desktop/Phydon/InOut/Input/InputText.txt', 'r')
-sys.stdout = open('C:/Users/Hubi/Desktop/Phydon/InOut/Output/OutputText.txt', 'w')
+sys.stdin = open('InputText.txt', 'r')
+sys.stdout = open('OutputText.txt', 'w')
 ############################Int
 def get_ints(): 
     return map(int, sys.stdin.readline().strip().split())
