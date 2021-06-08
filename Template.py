@@ -4,6 +4,14 @@ import math, cmath
 sys.stdin = open('pythonProjects\CompetitiveProgramming\Input.txt', 'r')
 sys.stdout = open('pythonProjects\CompetitiveProgramming\Output.txt', 'w')
 
+def get_time(func):
+    def wrapper():
+        start = time.perf_counter()
+        func()
+        end = time.perf_counter()
+        print("\nTime taken:", end - start)
+    return wrapper
+
 def get_ints(): 
     return map(int, sys.stdin.readline().strip().split())
 
@@ -13,22 +21,16 @@ def get_list():
 def get_string(): 
     return sys.stdin.readline().strip()
 
-#a,b,c,d = get_ints()
-#Arr = get_list()
-#string = get_string()
 
-
+@ get_time
 def solve():
-    start = time.perf_counter()
-##### - - - CODE STARTS- - - #####
+##### - - - CODE STARTS HERE - - - #####
 
     
-    
 
 
-##### - - - CODE ENDS - - - #####
-    end = time.perf_counter()
-    print("\nTime taken:", end - start)
+
+##### - - - CODE ENDS HERE - - - #####
 
 
 if __name__ == "__main__":
