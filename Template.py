@@ -12,7 +12,7 @@ def get_time(func):
         print("\nTime taken:", end - start)
     return wrapper
 
-def get_int():
+def get_input():
     return sys.stdin.readline().strip()
 
 def get_ints(): 
