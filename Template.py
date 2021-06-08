@@ -12,6 +12,9 @@ def get_time(func):
         print("\nTime taken:", end - start)
     return wrapper
 
+def get_int():
+    return sys.stdin.readline().strip()
+
 def get_ints(): 
     return map(int, sys.stdin.readline().strip().split())
 
@@ -27,7 +30,7 @@ def solve():
 ##### - - - CODE STARTS HERE - - - #####
 
     
-
+    
 
 
 ##### - - - CODE ENDS HERE - - - #####
