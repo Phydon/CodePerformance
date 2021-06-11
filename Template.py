@@ -24,6 +24,16 @@ def debug(func):
         return value
     return wrapper_debug
 
+def get_info(*args):
+    args_size = [sys.getsizeof(a) for a in args]
+    args_location = [hex(id(a)) for a in args]
+    args_type = [type(a) for a in args]
+    for a, t, s, l in zip(args, args_type, args_size, args_location):
+        print(f'Value: {a}')
+        print(f'Type: {t}')
+        print(f'Size: {s} bytes')
+        print(f'Located at: {l}\n')
+    return None
 
 def get_int():
     return int(sys.stdin.readline().strip())
@@ -42,8 +52,8 @@ def get_string():
 def solve():
 ##### - - - CODE STARTS HERE - - - #####
 
-   
     
+    get_info(1, 1.0)
 
 
 ##### - - - CODE ENDS HERE - - - #####
