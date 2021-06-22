@@ -1,5 +1,6 @@
 import sys
-import math, cmath, time, functools
+import math, cmath, time, functools, profile
+
 
 sys.stdin = open('pythonProjects\CompetitiveProgramming\Input.txt', 'r')
 sys.stdout = open('pythonProjects\CompetitiveProgramming\Output.txt', 'w')
@@ -9,7 +10,7 @@ def get_time(func):
         start = time.perf_counter()
         func()
         end = time.perf_counter()
-        print("\nTime taken:", end - start)
+        print('\nTime taken:', end - start, '\n')
     return time_wrapper
 
 def debug(func):
@@ -49,15 +50,16 @@ def get_string():
 
 
 @ get_time
-def solve():
+def main():
 ##### - - - CODE STARTS HERE - - - #####
 
     
     
-
-
+    
+  
 ##### - - - CODE ENDS HERE - - - #####
 
 
-if __name__ == "__main__":
-    solve()
+if __name__ == '__main__':
+    main()
+    # profile.run('main()')
