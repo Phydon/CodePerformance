@@ -1,6 +1,7 @@
 import sys
 import math, cmath, time, functools, profile
 
+# sys.setrecursionlimit(1000)
 
 sys.stdin = open('pythonProjects\CompetitiveProgramming\Input.txt', 'r')
 sys.stdout = open('pythonProjects\CompetitiveProgramming\Output.txt', 'w')
