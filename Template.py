@@ -1,10 +1,17 @@
 import sys
-import math, cmath, time, functools, profile
+# import math
+# import cmath
+# import re
+# import time
+# import functools
+# import profile
+
 
 # sys.setrecursionlimit(1000)
 
 sys.stdin = open('pythonProjects\CompetitiveProgramming\Input.txt', 'r')
 sys.stdout = open('pythonProjects\CompetitiveProgramming\Output.txt', 'w')
+
 
 def get_time(func):
     def time_wrapper():
