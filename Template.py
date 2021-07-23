@@ -1,16 +1,19 @@
 import sys
+import time
+import functools
+# import profile
 # import math
 # import cmath
 # import re
-# import time
-# import functools
-# import profile
+# import numpy as np
+# import pandas as pd
+# import matplotlib.pyplot as plt
 
 
-# sys.setrecursionlimit(1000)
+# sys.setrecursionlimit(1000) # default recursion limit is 1000
 
-sys.stdin = open('pythonProjects\CompetitiveProgramming\Input.txt', 'r')
-sys.stdout = open('pythonProjects\CompetitiveProgramming\Output.txt', 'w')
+# sys.stdin = open('pythonProjects\CompetitiveProgramming\Input.txt', 'r')
+# sys.stdout = open('pythonProjects\CompetitiveProgramming\Output.txt', 'w')
 
 
 def get_time(func):
@@ -56,14 +59,20 @@ def get_list():
 def get_string(): 
     return sys.stdin.readline().strip()
 
+def odd_even(x):
+    if x & 1:
+        return True # odd
+    else:
+        return False # even
 
-@ get_time
+
+@get_time
 def main():
 ##### - - - CODE STARTS HERE - - - #####
 
-    
-    
-    
+
+    pass
+
   
 ##### - - - CODE ENDS HERE - - - #####
 
