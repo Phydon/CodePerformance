@@ -5,6 +5,7 @@ import functools
 # import math
 # import cmath
 # import re
+# import random
 # import numpy as np
 # import pandas as pd
 # import matplotlib.pyplot as plt
@@ -12,8 +13,8 @@ import functools
 
 # sys.setrecursionlimit(1000) # default recursion limit is 1000
 
-# sys.stdin = open('pythonProjects\CompetitiveProgramming\Input.txt', 'r')
-# sys.stdout = open('pythonProjects\CompetitiveProgramming\Output.txt', 'w')
+sys.stdin = open('Input.txt', 'r')
+sys.stdout = open('Output.txt', 'w')
 
 
 def get_time(func):
@@ -21,7 +22,8 @@ def get_time(func):
         start = time.perf_counter()
         func()
         end = time.perf_counter()
-        print('\nTime taken:', end - start, '\n')
+        t = (end - start) * 1000
+        print('\nTime taken:', round(t, 6), 'ms', '\n')
     return time_wrapper
 
 def debug(func):
@@ -66,7 +68,7 @@ def odd_even(x):
         return False # even
 
 
-@get_time
+# @get_time
 def main():
 ##### - - - CODE STARTS HERE - - - #####
 
